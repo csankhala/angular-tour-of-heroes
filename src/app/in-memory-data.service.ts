@@ -10,7 +10,7 @@ export class InMemoryDataService implements InMemoryDbService {
   constructor() { }
 
   createDb() {
-    let HEROES: Hero[]=[
+    let heroes: Hero[]=[
       {id:11, name:"Dr Nice"},
       {id:12, name:'Narco'},
       {id:13, name:'Bombasto'},
@@ -22,7 +22,7 @@ export class InMemoryDataService implements InMemoryDbService {
       {id:19, name:'Magma'},
       {id:20, name:'Tornado'},
     ];
-    return {HEROES};
+    return {heroes};
   }
 
   genId(heroes: Hero[]) : number {
